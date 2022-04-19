@@ -1,0 +1,113 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+   width: 25px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   background: #fcfcfc;
+}
+.slick-prev {
+   left: 0;
+   border-top-right-radius: 7px;
+   border-bottom-right-radius: 7px;
+}
+.slick-next {
+   right: 0;
+   border-bottom-left-radius: 7px;
+   border-top-left-radius: 7px;
+}
+.slick-prev::before, 
+.slick-next::before {
+   display: none;
+} 
+.home-slider-section{
+   margin: 0 auto; 
+   text-align: start;
+}
+.home-slider-heading {
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.5em;
+	line-height: 1em;
+	margin: 10px 0;
+	padding: 0;
+}
+.home-slider-description {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1em;	
+	color: #333333;
+	opacity: 0.6;
+   margin-bottom: 10px;
+}
+.home-image-box {
+   display: flex !important;
+   align-items: center;
+   justify-content: space-between;
+}
+.home-image-slide {
+   display: block;
+   margin: 0 auto;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: 15px;
+
+} 
+.home-sub-image{
+   width: 40px;
+   height: 40px;
+   object-fit: cover;
+   border-radius: 10px;
+} 
+.home-custom-indicator{
+   bottom: -60px;
+}
+.home-custom-indicator li {
+   width: 50px;
+   height: 50px;
+   filter: grayscale(100%);
+}
+.home-custom-indicator li.slick-active {
+   filter: grayscale(0);
+}
+
+.home-sliders{
+   position: relative;
+}
+.home-sliders.one {
+   margin-right: 30px;
+}
+.home-slider-info {
+   position: absolute;
+   left: 10px;
+   top: 30px;
+   display: none;
+   width: 350px;
+   text-align: left;
+   padding: 0 10px;
+   padding-bottom: 10px;
+   color: #fcfcfc;
+   border-radius: 6px;
+   transition: ease-in-out 0.8s;
+}
+.home-sliders:hover .home-image-slide{
+   filter: brightness(50%);
+   transition: ease-in-out 0.8s;
+}
+.home-sliders:hover .home-slider-info {
+   display: block;
+   transition: ease-in-out 0.8s;
+}
+.home-slide-title {
+   margin: 0;
+   padding: 0;
+
+}
+.home-slider-discription {
+   margin: 0;
+   padding: 0;
+}

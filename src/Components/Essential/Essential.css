@@ -1,0 +1,25 @@
+.essential-fon {
+   height: 65px;
+   background-color: #3ed8b9 ;
+}
+.essential .container {
+   text-align: center;
+}
+.essential-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 40px;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.essential-heading {
+   font-size: 36px;
+   margin: 0;
+   padding: 40px 0;
+}
+.essential-link {
+   color: #000;
+   text-decoration: none;
+}
