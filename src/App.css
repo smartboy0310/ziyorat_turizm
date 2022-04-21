@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 700;
-  src: url('./Assets/Font/mulish-latin_cyrillic-700.woff2') format('woff2'),
-  url('./Assets/Font/mulish-latin_cyrillic-700.woff') format('woff');
-}
-@font-face {
-  font-family: 'Mulish';
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 400;
-  src: url('./Assets/Font/mulish-latin_cyrillic-regular.woff2')
-  format('woff2'),
-  url('./Assets/Font/mulish-latin_cyrillic-regular.woff') format('woff');
+  src: local(""), url("./Assets/Font/roboto-condensed-v24-latin_cyrillic-regular.woff2") format("woff2"),
+      url("./Assets/Font/roboto-condensed-v24-latin_cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./Assets/Font/roboto-condensed-v24-latin_cyrillic-700.woff2") format("woff2"),
+      url("./Assets/Font/roboto-condensed-v24-latin_cyrillic-700.woff") format("woff");
 }
 
 * {
@@ -47,11 +47,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Mulish';
+  font-family: 'Roboto Condensed';
   font-size: 16px;
-  line-height: 18px;
-  height: 1500px;
-  
+  line-height: 18px;  
 }
 
 

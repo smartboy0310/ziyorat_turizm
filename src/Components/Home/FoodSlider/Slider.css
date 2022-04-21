@@ -48,17 +48,21 @@
    text-align: left;
    padding: 0 10px;
    padding-bottom: 10px;
-   color: #fcfcfc;
-   background-color: rgba(0, 0, 0, 0.3);
+   color: #fff;
+  
    transition: 0.5s;
+   border-radius: 8px;
 }
 .food-sliders:hover .food-image-slide{
-   filter: contrast(40%);
+   filter: contrast(30%);
    transition: 0.5s;
 }
 .food-sliders:hover .food-slider-info {
    display: block;
    transition: 0.5s;
+}
+.food-image-slide {
+   border-radius: 8px;
 }
 .food-slide-title {
    margin: 0;

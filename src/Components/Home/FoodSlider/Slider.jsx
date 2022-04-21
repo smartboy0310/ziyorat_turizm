@@ -45,8 +45,8 @@ const SliderImage = () => {
 											className="food-image-slide"
 											src={item}
 											alt="Obyektlat rasmi"
-											width={420}
-											height={500}
+											width={400}
+											height={450}
 										/>
 										<div className="food-slider-info">
 											<h2 className="food-slide-title">
@@ -70,8 +70,8 @@ const SliderImage = () => {
 													: SliderData[0]
 											}
 											alt="Obyektlat rasmi"
-											width={420}
-											height={500}
+											width={400}
+											height={450}
 										/>
 										<div className="food-slider-info">
 											<h2 className="food-slide-title">
@@ -95,8 +95,8 @@ const SliderImage = () => {
 													: SliderData[1]
 											}
 											alt="Obyektlat rasmi"
-											width={420}
-											height={500}
+											width={400}
+											height={450}
 										/>
 										<div className="food-slider-info">
 											<h2 className="food-slide-title">

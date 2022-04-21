@@ -1,0 +1,22 @@
+.hero-province video {
+   object-fit: cover;
+   width: 100%;
+   max-width: 1400px;
+   height: 100%;
+   position: fixed;
+}
+.disactive {
+   display: none;
+} 
+
+.hero-province .container { 
+   position: relative;  
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   padding: 0; 
+   object-fit: cover;
+}
