@@ -52,21 +52,21 @@ function Navbar() {
 									Muhim ma'lumotlar
 									<span className="nav-item__line"></span>
 								</Link>
-								<div className="submenu__box"></div>
+								
 							</li>
 							<li className="nav-item">
 								<Link to="/contacts" className="nav-links">
 									Kontakt
 									<span className="nav-item__line"></span>
 								</Link>
-								<div className="submenu__box"></div>
+								
 							</li>
 							<li className="nav-item">
 								<Link to="/about" className="nav-links">
 									Biz haqimizda
 									<span className="nav-item__line"></span>
 								</Link>
-								<div className="submenu__box"></div>
+								
 							</li>
 						</ul>
 						<div className="my-trip">

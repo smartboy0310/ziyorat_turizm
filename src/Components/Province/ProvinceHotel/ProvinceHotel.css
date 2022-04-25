@@ -1,0 +1,48 @@
+.province-hotels .container{
+   position: relative;
+   background-color: #fff;
+   padding: 20px 30px;
+}
+
+.hotels-heading {
+   width: 100%;
+   max-width: 300px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.2em;
+	line-height: 1em;
+   margin: 0 auto;
+   margin-bottom: 20px;
+	padding: 0;
+}
+.hotels__box {
+   display: flex;
+   align-items: center;
+}
+.hotels__info-box {
+   display: flex;
+   align-items: flex-start;
+}
+.hotels__img-box {
+   position: relative;
+	box-sizing: content-box;
+	overflow: hidden;
+   margin-right: 20px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.hotels__img-box + .hotels__img-box {
+   margin-left: 20px;
+}
+.hotel-img {
+   border-radius: 8px;
+   transition: ease-in-out 0.8s;
+}
+.hotel-img:hover {
+   transform: scale(1.1);
+   transition: ease-in-out 0.8s;
+}
+.hotel-info {
+   width: 100%;
+   max-width: 300px;
+}

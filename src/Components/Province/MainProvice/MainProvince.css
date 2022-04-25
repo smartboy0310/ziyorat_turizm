@@ -1,9 +1,15 @@
 .main-provice {
+  position: relative;
+  width: 100%;
   background-color: #fff;
+}
+.main-provice-top{
+  position: relative;
+  width: 100%;
 }
 .arrow-img {
   width: 100%;
-  margin-bottom: -7px;
+  margin-bottom: -5px;
 }
 .main-provice-info{
   position: relative;

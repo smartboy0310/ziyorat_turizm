@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainShrine.css';
 
-import sulUvays from '../../../Assets/Images/sul-uvays.jpg';
+import sulUvays from '../../../Assets/Images/Qoraqalpoq/Obidalar/sul-uvays.jpg';
 
 function MainShrine() {
 	return (

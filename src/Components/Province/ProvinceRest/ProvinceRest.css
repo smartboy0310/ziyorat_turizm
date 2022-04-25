@@ -1,0 +1,48 @@
+.province-restaurants .container{
+   position: relative;
+   background-color: #fff;
+   padding: 20px 30px;
+}
+
+.restaurants-heading {
+   width: 100%;
+   max-width: 300px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.2em;
+	line-height: 1em;
+   margin: 0 auto;
+   margin-bottom: 20px;
+	padding: 0;
+}
+.restaurants__box {
+   display: flex;
+   align-items: center;
+}
+.restaurants__info-box {
+   display: flex;
+   align-items: flex-start;
+}
+.restaurants__img-box {
+   position: relative;
+	box-sizing: content-box;
+	overflow: hidden;
+   margin-right: 20px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.restaurants__img-box + .restaurants__img-box {
+   margin-left: 20px;
+}
+.restaurant-img {
+   border-radius: 8px;
+   transition: ease-in-out 0.8s;
+}
+.restaurant-img:hover {
+   transform: scale(1.1);
+   transition: ease-in-out 0.8s;
+}
+.restaurant-info {
+   width: 100%;
+   max-width: 300px;
+}

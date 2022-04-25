@@ -1,0 +1,48 @@
+.province-parks .container{
+   position: relative;
+   background-color: #fff;
+   padding: 20px 30px;
+}
+
+.parks-heading {
+   width: 100%;
+   max-width: 300px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.2em;
+	line-height: 1em;
+   margin: 0 auto;
+   margin-bottom: 20px;
+	padding: 0;
+}
+.parks__box {
+   display: flex;
+   align-items: center;
+}
+.parks__info-box {
+   display: flex;
+   align-items: flex-start;
+}
+.parks__img-box {
+   position: relative;
+	box-sizing: content-box;
+	overflow: hidden;
+   margin-right: 20px;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.parks__img-box + .parks__img-box {
+   margin-left: 20px;
+}
+.park-img {
+   border-radius: 8px;
+   transition: ease-in-out 0.8s;
+}
+.park-img:hover {
+   transform: scale(1.1);
+   transition: ease-in-out 0.8s;
+}
+.park-info {
+   width: 100%;
+   max-width: 300px;
+}
