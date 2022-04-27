@@ -42,16 +42,16 @@ const SliderImage = () => {
 							{SliderData.map((item, index) => (
 								<div className="home-image-box" key={index}>
 									<div className="home-sliders">
-										<Link to="/shrine">
-											<img
-												className="home-image-slide"
-												src={item}
-												alt="Obyektlat rasmi"
-												width={300}
-												height={380}
-											/>
-											<div className="home-slider-info">
-												<h2 className="home-slide-title">
+										<img
+											className="home-image-slider"
+											src={item}
+											alt="Obyektlat rasmi"
+											width={310}
+											height={350}
+										/>
+										<div className="home-slider-info">
+											<div className="home-info-box">
+												<h2 className="home-slider-title">
 													Lorem ipsum dolor sit amet.
 												</h2>
 												<p className="home-slider-discription">
@@ -60,9 +60,28 @@ const SliderImage = () => {
 													elit. Quos, alias.
 												</p>
 											</div>
-										</Link>
+										</div>
+										<div className="home-slider-hover">
+											<div className="home-hover-box">
+												<h2 className="home-slider-title">
+													Lorem ipsum dolor sit amet.
+												</h2>
+												<p className="home-slider-discription">
+													Lorem ipsum dolor sit, amet
+													consectetur adipisicing
+													elit. Quos, alias.
+												</p>
+												<button>
+													<Link
+														className="home-link"
+														to="/shrine"
+													>
+														Batafsil...
+													</Link>
+												</button>
+											</div>
+										</div>
 									</div>
-									
 								</div>
 							))}
 						</Slider>

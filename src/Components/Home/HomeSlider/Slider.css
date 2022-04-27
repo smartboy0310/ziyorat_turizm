@@ -29,31 +29,31 @@
    background-color: #fcfcfc;
 }
 .home-slider-heading {
-	font-style: normal;
+  	font-style: normal;
 	font-weight: 700;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	line-height: 1em;
-	margin: 10px 0;
-	padding: 0;
+   margin: 0 auto;
+   margin-bottom: 10px;
+   margin-left: 10px;
+	padding-top: 10px;
 }
 .home-slider {
    width: 100%;
-   max-width: 1250px;
+   max-width: 1300px;
    margin: 0 auto;
+
 }
-.home-image-box {
-   
+.home-image-box{
    display: flex !important;
-   align-items: center;
+   align-items: center !important;
    justify-content: space-evenly !important;
+  
 }
-.home-image-slide {
-   display: block;
-   margin: 0 auto;
+.home-image-slider {
    object-fit: cover;
    border-radius: 10px;
-   margin-bottom: 15px;
-
+   transition: ease-in-out 0.8s;
 } 
 .home-sub-image{
    width: 40px;
@@ -75,33 +75,78 @@
 
 .home-sliders{
    position: relative;
+	box-sizing: content-box;
+	overflow: hidden;
+	border-radius: 10px;
+  
 }
-.home-sliders.one {
-   margin-right: 30px;
+.home-sliders:hover .home-image-slider{
+   transform: scale(1.1);
 }
-.home-slider-info {
+.home-slider-info,
+.home-slider-hover {
    position: absolute;
-   left: 10px;
-   top: 30px;
-   display: none;
-   width: 350px;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 100%;
    text-align: left;
-   padding: 0 10px;
-   padding-bottom: 10px;
    color: #fcfcfc;
    border-radius: 6px;
-   transition: ease-in-out 0.8s;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #161616 100%) ;
+	transition: ease-in-out 0.8s all;
+   z-index: 222;
+   cursor: pointer;
 }
-.home-sliders:hover .home-image-slide{
-   filter: brightness(50%);
-   transition: ease-in-out 0.8s;
+.home-slider-hover {
+   display: none;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #161616 100%);
+   transition: ease-in-out 0.8s; 
 }
-.home-sliders:hover .home-slider-info {
+.home-info-box {
+   position: absolute;
+   top: 80%;
+   left: 20px;
+}
+
+.home-hover-box {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+}
+.home-hover-box .home-slider-title {
+   margin-bottom: 10px;
+}
+
+.home-hover-box .home-slider-discription {
+   margin-bottom: 200px;
+}
+.home-hover-box button {
+   border: none;
+}
+.home-link {
+   padding: 8px 25px;
+   font-size: 1.2em;
+   border-radius: 4px;
+   text-decoration: none;
+   color: #fcfcfc;
+   background-color: #22b192;
+}
+
+.home-sliders:hover .home-slider-hover{
    display: block;
    transition: ease-in-out 0.8s;
 }
-.home-slide-title {
+.home-sliders:hover .home-slider-info {
+   display: none;
+   transition: ease-in-out 0.8s;
+}
+.home-slider-title {
    margin: 0;
+   margin-bottom: 10px;
    padding: 0;
 
 }
