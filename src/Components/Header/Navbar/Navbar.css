@@ -59,7 +59,8 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5em 1em;
+  font-size: 1.2em;
+  padding: 0.5em;
   height: 100%;
   color: #fff;
 }
@@ -76,18 +77,17 @@
 .submenu__box {
   position: fixed;
   width: 100%;
-  height: 400px;
+  height: 380px;
   display: none;
-  top: 65px;
+  top: 63px;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 999;
+  padding: 10px 0;
   background-color: rgba(0,0,0, 0.9);
 }
-.nav-item:hover .submenu__box {
-  display: block;
-}
+
 .my-trip {
   margin-right: 20px;
   padding:  0;
@@ -109,10 +109,22 @@
 	justify-content: center;
 	align-items: center;
 }
+.nav-item:hover .submenu__box {
+  display: block;
+}
+.submenu--active{
+  display: none;
+}
 
 .submenu__link {
   display: flex;
-  align-items: center;
+  align-items: center;  
   text-decoration: none;
   color: #fff;
+
+}
+.submenu__img {
+  margin-right: 15px;
+  border-radius: 50%;
+  object-fit: cover;
 }

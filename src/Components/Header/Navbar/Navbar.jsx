@@ -89,6 +89,7 @@ const counrty = [
 
 function Navbar() {
 	const [navbar, setNavbar] = useState(false);
+	const [closeSub, setCloseSub] = useState(true);
 
 	const navBarBack = () => {
 		if (window.scrollY >= 40) {
@@ -97,6 +98,9 @@ function Navbar() {
 			setNavbar(false);
 		}
 	};
+	const closeSubMenu = () => {
+		setCloseSub(!closeSub)
+	}
 
 	window.addEventListener('scroll', navBarBack);
 
@@ -127,10 +131,11 @@ function Navbar() {
 									Shaharlar
 									<span className="nav-item__line"></span>
 								</Link>
-								<div className="submenu__box">
+								<div className={closeSub ? 'submenu__box submenu--active': 'submenu__box'}>
 									<ul className="submenu__list">
 										{counrty.map((e, i) => (
 											<li
+											onClick={closeSubMenu}
 												key={i}
 												className="submenu__item"
 											>
