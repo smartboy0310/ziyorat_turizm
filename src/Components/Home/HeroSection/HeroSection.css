@@ -1,4 +1,5 @@
 video {
+   position: fixed;
    object-fit: cover;
    width: 100%;
    max-width: 1400px;
@@ -21,14 +22,14 @@ video {
 }
 
 .hero__heading {
-   position: absolute;
+   position: fixed;
    color: #fff;
    font-size: 80px;
    top: 180px;
 }
 
 .hero__paragraph {
-   position: absolute;
+   position: fixed;
    top: 300px;
    color: #fff;
    font-size: 32px;

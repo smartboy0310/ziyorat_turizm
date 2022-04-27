@@ -25,6 +25,8 @@
 }
 .restaurants__img-box {
    position: relative;
+   width: 300px;
+   height: 350px;
 	box-sizing: content-box;
 	overflow: hidden;
    margin-right: 20px;
@@ -37,6 +39,7 @@
 .restaurant-img {
    border-radius: 8px;
    transition: ease-in-out 0.8s;
+   object-fit: cover;
 }
 .restaurant-img:hover {
    transform: scale(1.1);

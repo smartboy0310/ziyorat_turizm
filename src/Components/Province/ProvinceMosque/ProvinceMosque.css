@@ -25,6 +25,8 @@
 }
 .mosques__img-box {
    position: relative;
+   width: 300px;
+   max-width: 350px;
 	box-sizing: content-box;
 	overflow: hidden;
    margin-right: 20px;

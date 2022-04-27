@@ -23,11 +23,12 @@
    display: none;
 } 
 .home-slider-section{
+   position: relative;
    margin: 0 auto; 
    text-align: start;
+   background-color: #fcfcfc;
 }
 .home-slider-heading {
-	font-family: 'SF Pro Display';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 2.5em;
@@ -35,19 +36,16 @@
 	margin: 10px 0;
 	padding: 0;
 }
-.home-slider-description {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1em;	
-	color: #333333;
-	opacity: 0.6;
-   margin-bottom: 10px;
+.home-slider {
+   width: 100%;
+   max-width: 1250px;
+   margin: 0 auto;
 }
 .home-image-box {
+   
    display: flex !important;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-evenly !important;
 }
 .home-image-slide {
    display: block;

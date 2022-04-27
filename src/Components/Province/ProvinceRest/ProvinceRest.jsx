@@ -11,13 +11,13 @@ function ProvinceRest() {
 				<h2 className="restaurants-heading">Restoranlar</h2>
 				<div className="restaurants__box">
 					<div className="restaurants__info-box">
-						<div className="parks__img-box">
+						<div className="restaurants__img-box">
 						<img
 							className="restaurant-img"
 							src={parkOne}
 							alt="Recreation parks"
-							width={370}
-							height={420}
+							width={300}
+							height={350}
 						/>
 						</div>
 						<div className="restaurant-info">
@@ -36,8 +36,8 @@ function ProvinceRest() {
 							className="restaurant-img"
 							src={parkTwo}
 							alt="Recreation parks"
-							width={370}
-							height={420}
+							width={300}
+							height={350}
 						/>
 						</div>
 						<div className="restaurant-info">

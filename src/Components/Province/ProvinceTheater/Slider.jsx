@@ -26,92 +26,37 @@ const NextBtn = (props) => {
 const SliderImage = () => {
 	return (
 		<>
-			<section className="province-shrine-section">
+			<section className="province-theater-section">
 				<div className="container">
-					<h2 className="province-shrine-heading">
+					<h2 className="province-theater-heading">
 						Teatr va Kino zallar
 					</h2>
-					<div className="province-shrine">
+					<div className="province-theater">
 						<Slider
 							autoplay
 							autoplaySpeed={3000}
 							initialSlide={2}
 							infinite
+							slidesToShow={4}
 							prevArrow={<PreviousBtn />}
 							nextArrow={<NextBtn />}
 						>
 							{SliderData.map((item, index) => (
-								<div className="shrine-image-box" key={index}>
-									<div className="shrine-sliders one">
+								<div className="theater-image-box" key={index}>
+									<div className="theater-sliders one">
 										<Link to="/shrine">
 											<img
-												className="shrine-image-slider"
+												className="theater-image-slider"
 												src={item}
 												alt="Obyektlat rasmi"
-												width={370}
-												height={400}
+												width={320}
+												height={350}
 											/>
-											<div className="shrine-slider-info">
-												<h2 className="home-slider-title">
+											<div className="theater-slider-info">
+												<h2 className="theater-slider-title">
 													Lorem ipsum dolor sit amet.
 												</h2>
-												<p className="shrine-slider-discription">
-													Lorem ipsum dolor sit, amet
-													consectetur adipisicing
-													elit. Quos, alias.
-												</p>
-											</div>
-										</Link>
-									</div>
-									<div
-										className="shrine-sliders"
-										key={index + 1}
-									>
-										<Link to="/shrine">
-											<img
-												className="shrine-image-slider"
-												src={
-													index + 1 < 4
-													? SliderData[index + 1]
-													: SliderData[0]
-												}
-												alt="Obyektlat rasmi"
-												width={370}
-												height={400}
-											/>
-											<div className="shrine-slider-info">
-												<h2 className="shrine-slider-title">
-													Lorem ipsum dolor sit amet.
-												</h2>
-												<p className="shrine-slider-discription">
-													Lorem ipsum dolor sit, amet
-													consectetur adipisicing
-													elit. Quos, alias.
-												</p>
-											</div>
-										</Link>
-									</div>
-									<div
-										className="shrine-sliders"
-										key={index + 2}
-									>
-										<Link to="/shrine">
-											<img
-												className="shrine-image-slider"
-												src={
-													index + 2 < 4
-														? SliderData[index + 2]
-														: SliderData[1]
-												}
-												alt="Obyektlat rasmi"
-												width={370}
-												height={400}
-											/>
-											<div className="shrine-slider-info">
-												<h2 className="shrine-slider-title">
-													Lorem ipsum dolor sit amet.
-												</h2>
-												<p className="shrine-slider-discription">
+												<p className="theater-slider-discription">
 													Lorem ipsum dolor sit, amet
 													consectetur adipisicing
 													elit. Quos, alias.

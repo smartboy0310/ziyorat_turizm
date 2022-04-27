@@ -2,8 +2,90 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logoImg from '../../../Assets/Images/logo.jpg';
-import myTrip from '../../../Assets/Images/my-trip.svg';
+// import myTrip from '../../../Assets/Images/my-trip.svg';
 import searchImg from '../../../Assets/Images/search.svg';
+
+import img1 from '../../../Assets/Images/Viloyatlar/toshkent.jpg';
+import img2 from '../../../Assets/Images/Viloyatlar/andijon.jpg';
+import img3 from '../../../Assets/Images/Viloyatlar/buxoro.jpg';
+import img4 from '../../../Assets/Images/Viloyatlar/fargona.jpg';
+import img5 from '../../../Assets/Images/Viloyatlar/jizzax.jpg';
+import img6 from '../../../Assets/Images/Viloyatlar/namangan.jpg';
+import img7 from '../../../Assets/Images/Viloyatlar/navoi.jpg';
+import img8 from '../../../Assets/Images/Viloyatlar/qashqadaryo.jpg';
+import img9 from '../../../Assets/Images/Viloyatlar/qoraqolpoq.jpg';
+import img10 from '../../../Assets/Images/Viloyatlar/samarqand.jpg';
+import img11 from '../../../Assets/Images/Viloyatlar/sirdaryo.jpg';
+import img12 from '../../../Assets/Images/Viloyatlar/toshkent-vil.jpg';
+import img13 from '../../../Assets/Images/Viloyatlar/xorazm.jpg';
+
+const counrty = [
+	{
+		name: 'Toshkent shahri',
+		title: 'Bag’ri keng bilan mashxur',
+		img: img1,
+	},
+	{
+		name: 'Andijon viloyati',
+		title: 'Devzira oshlari bilan mashxur',
+		img: img2,
+	},
+	{
+		name: 'Buxoro viloyati',
+		title: 'G’ijdivon shashliklari bilan mashxur',
+		img: img3,
+	},
+	{
+		name: 'Farg’ona viloyati',
+		title: 'Marg’ilon do’ppilari bilan mashxur',
+		img: img4,
+	},
+	{
+		name: 'Jizzax viloyati',
+		title: 'Zomin tog’lari bilan mashxur',
+		img: img5,
+	},
+	{
+		name: 'Namangan viloyati',
+		title: 'Cho’st pichoqlari bilan mashxur',
+		img: img6,
+	},
+	{
+		name: 'Navoiy viloyati',
+		title: 'Qizilqum cho’llari bilan mashxur',
+		img: img7,
+	},
+	{
+		name: 'Qashqadaryo viloyati',
+		title: 'O’zining tandir go’shtlari bilan mashxur',
+		img: img8,
+	},
+	{
+		name: 'Qoraqalpog’iston Respublikasi',
+		title: 'Erkaboy va Abdulla bilan mashxur',
+		img: img9,
+	},
+	{
+		name: 'Samarqand  viloyati',
+		title: 'Samarqand nonlari bilan mashxur',
+		img: img10,
+	},
+	{
+		name: 'Sirdaryo viloyati',
+		title: 'Sirdaryo baliqlari bilan mashxur',
+		img: img11,
+	},
+	{
+		name: 'Toshkent viloyati',
+		title: 'Shonli o’tmishi bilan mashxur',
+		img: img12,
+	},
+	{
+		name: 'Xorazm viloyati',
+		title: 'Qadimiy binolari bilan mashxur',
+		img: img13,
+	},
+];
 
 function Navbar() {
 	const [navbar, setNavbar] = useState(false);
@@ -45,31 +127,53 @@ function Navbar() {
 									Shaharlar
 									<span className="nav-item__line"></span>
 								</Link>
-								<div className="submenu__box"></div>
+								<div className="submenu__box">
+									<ul className="submenu__list">
+										{counrty.map((e, i) => (
+											<li
+												key={i}
+												className="submenu__item"
+											>
+												<Link
+													className="submenu__link"
+													to="/province"
+												>
+													<img
+														className="submenu__img"
+														src={e.img}
+														alt={e.name}
+														width={60}
+														height={60}
+													/>
+													<h3 className="submenu__name">
+														{e.name}
+													</h3>
+												</Link>
+											</li>
+										))}
+									</ul>
+								</div>
 							</li>
 							<li className="nav-item">
 								<Link to="/essential" className="nav-links">
 									Muhim ma'lumotlar
 									<span className="nav-item__line"></span>
 								</Link>
-								
 							</li>
 							<li className="nav-item">
 								<Link to="/contacts" className="nav-links">
 									Kontakt
 									<span className="nav-item__line"></span>
 								</Link>
-								
 							</li>
 							<li className="nav-item">
 								<Link to="/about" className="nav-links">
 									Biz haqimizda
 									<span className="nav-item__line"></span>
 								</Link>
-								
 							</li>
 						</ul>
-						<div className="my-trip">
+						{/* <div className="my-trip">
 							<Link to="/bookmarks">
 								<img
 									className="my-trip__img"
@@ -79,7 +183,7 @@ function Navbar() {
 									height={25}
 								/>
 							</Link>
-						</div>
+						</div> */}
 						<div className="search">
 							<Link to="/search">
 								<img

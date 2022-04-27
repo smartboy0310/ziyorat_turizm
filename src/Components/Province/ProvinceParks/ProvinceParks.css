@@ -25,6 +25,8 @@
 }
 .parks__img-box {
    position: relative;
+   width: 300px;
+   height: 350px;
 	box-sizing: content-box;
 	overflow: hidden;
    margin-right: 20px;
@@ -37,6 +39,9 @@
 .park-img {
    border-radius: 8px;
    transition: ease-in-out 0.8s;
+   margin: 0;
+   padding: 0;
+   object-fit: cover;
 }
 .park-img:hover {
    transform: scale(1.1);

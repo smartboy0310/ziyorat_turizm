@@ -100,3 +100,19 @@
   cursor: pointer;
 }
 
+.submenu__list {
+  display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 40px;
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.submenu__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}

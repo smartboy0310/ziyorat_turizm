@@ -34,6 +34,7 @@ const SliderImage = () => {
 						autoplaySpeed={3000}
 						initialSlide={2}
 						infinite
+						slidesToShow={5}
 						prevArrow={<PreviousBtn />}
 						nextArrow={<NextBtn />}
 					>
@@ -45,8 +46,8 @@ const SliderImage = () => {
 											className="food-image-slide"
 											src={item}
 											alt="Obyektlat rasmi"
-											width={400}
-											height={450}
+											width={250}
+											height={300}
 										/>
 										<div className="food-slider-info">
 											<h2 className="food-slide-title">
@@ -59,57 +60,7 @@ const SliderImage = () => {
 											</p>
 										</div>
 									</Link>
-								</div>
-								<div className="food-sliders center" key={index + 1}>
-									<Link to="/shrine">
-										<img
-											className="food-image-slide"
-											src={
-												index + 1 < 6
-													? SliderData[index + 1]
-													: SliderData[0]
-											}
-											alt="Obyektlat rasmi"
-											width={400}
-											height={450}
-										/>
-										<div className="food-slider-info">
-											<h2 className="food-slide-title">
-												Lorem ipsum dolor sit amet.
-											</h2>
-											<p className="food-slider-discription">
-												Lorem ipsum dolor sit, amet
-												consectetur adipisicing elit.
-												Quos, alias.
-											</p>
-										</div>
-									</Link>
-								</div>
-								<div className="food-sliders" key={index + 2}>
-									<Link to="/shrine">
-										<img
-											className="food-image-slide"
-											src={
-												index + 2 < 6
-													? SliderData[index + 2]
-													: SliderData[1]
-											}
-											alt="Obyektlat rasmi"
-											width={400}
-											height={450}
-										/>
-										<div className="food-slider-info">
-											<h2 className="food-slide-title">
-												Lorem ipsum dolor sit amet.
-											</h2>
-											<p className="food-slider-discription">
-												Lorem ipsum dolor sit, amet
-												consectetur adipisicing elit.
-												Quos, alias.
-											</p>
-										</div>
-									</Link>
-								</div>
+								</div>								
 							</div>
 						))}
 					</Slider>

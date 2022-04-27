@@ -16,8 +16,8 @@ function ProvinceMosque() {
 							className="mosque-img"
 							src={parkOne}
 							alt="Recreation parks"
-							width={370}
-							height={420}
+							width={300}
+							height={350}
 						/>
 						</div>
 						<div className="mosque-info">
@@ -36,8 +36,8 @@ function ProvinceMosque() {
 							className="park-img"
 							src={parkTwo}
 							alt="Recreation parks"
-							width={370}
-							height={420}
+							width={300}
+							height={350}
 						/>
 						</div>
 						<div className="mosque-info">

@@ -16,8 +16,8 @@ function ProvinceParks() {
 							className="park-img"
 							src={parkOne}
 							alt="Recreation parks"
-							width={370}
-							height={420}
+							width={300}
+							height={350}
 						/>
 						</div>
 						<div className="park-info">
@@ -36,8 +36,8 @@ function ProvinceParks() {
 							className="park-img"
 							src={parkTwo}
 							alt="Recreation parks"
-							width={370}
-							height={420}
+							width={300}
+							height={350}
 						/>
 						</div>
 						<div className="park-info">

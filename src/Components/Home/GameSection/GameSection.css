@@ -1,5 +1,7 @@
 .flok-game {
+	position: relative;
 	padding: 10px 0;
+	background-color: #fff;
 }
 .game-heading {
 	font-style: normal;

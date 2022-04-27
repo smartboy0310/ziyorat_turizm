@@ -1,18 +1,21 @@
 
 .food-slider-section{
-   width: 100%;
-   margin: 0 auto; 
-   margin-bottom: 10px;
+ 
    text-align: center;
+}
+.food-slider {
+   width: 100%;
+   max-width: 1300px;
 }
 .food-image-box {
    display: flex !important;
-   align-items: center;
-   justify-content: space-between;
+   align-items: center !important;
+   justify-content: space-evenly !important;
 }
-.food-image-slide {
+.food-image-slide + .food-image-slide{
    display: block;
-   margin: 0 auto;
+   margin-left: 10px;
+   border-radius: 10px;
    object-fit: cover;
 
 } 
@@ -36,9 +39,7 @@
 .food-sliders{
    position: relative;
 }
-.food-sliders.center {
-   margin: 0 20px;
-}
+
 .food-slider-info {
    position: absolute;
    left: 10px;

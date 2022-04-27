@@ -24,7 +24,6 @@ province-shrine.slick-arrow.slick-prev,
 } 
 .province-shrine-section{
    margin: 0 auto; 
-   padding: 15px 0;
    text-align: center;
 }
 .province-shrine-heading {
@@ -40,13 +39,14 @@ province-shrine.slick-arrow.slick-prev,
 }
 .province-shrine {
    width: 100%;
-   max-width: 1200px;
+   max-width: 1150px;
    margin: 0 auto;
+
 }
 .shrine-image-box {
    display: flex !important;
-   align-items: center;
-   justify-content: space-between;
+   align-items: center !important;
+   justify-content: space-evenly !important;
   
 }
 .shrine-image-slider {
@@ -77,33 +77,74 @@ province-shrine.slick-arrow.slick-prev,
 	box-sizing: content-box;
 	overflow: hidden;
 	border-radius: 10px;
+  
 }
 .shrine-sliders:hover .shrine-image-slider{
    transform: scale(1.1);
 }
-.shrine-slider-info {
+.shrine-slider-info,
+.shrine-slider-hover {
    position: absolute;
-   left: 10px;
-   top: 30px;
-   display: none;
-   width: 350px;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 100%;
    text-align: left;
-   padding: 0 10px;
-   padding-bottom: 10px;
    color: #fcfcfc;
    border-radius: 6px;
-   transition: ease-in-out 0.8s;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #161616 100%) ;
+	transition: ease-in-out 0.8s all;
+   z-index: 222;
+   cursor: pointer;
 }
-.shrine-sliders:hover .shrine-image-slider{
-   filter: brightness(50%);
+.shrine-slider-hover {
+   display: none;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #161616 100%) ;
+}
+.shrine-info-box {
+   position: absolute;
+   top: 80%;
+   left: 20px;
+}
+
+.shrine-hover-box {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+}
+.shrine-hover-box .shrine-slider-title {
+   margin-bottom: 10px;
+}
+
+.shrine-hover-box .shrine-slider-discription {
+   margin-bottom: 200px;
+}
+.shrine-hover-box button {
+   border: none;
+}
+.shrine-link {
+   padding: 8px 25px;
+   font-size: 1.2em;
+   border-radius: 4px;
+   text-decoration: none;
+   color: #fcfcfc;
+   background-color: #22b192;
+}
+
+.shrine-sliders:hover .shrine-slider-hover{
+   display: block;
    transition: ease-in-out 0.8s;
 }
 .shrine-sliders:hover .shrine-slider-info {
-   display: block;
+   display: none;
    transition: ease-in-out 0.8s;
 }
 .shrine-slider-title {
    margin: 0;
+   margin-bottom: 10px;
    padding: 0;
 
 }
