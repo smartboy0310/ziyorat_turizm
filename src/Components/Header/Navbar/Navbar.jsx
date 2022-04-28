@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logoImg from '../../../Assets/Images/logo.jpg';
-// import myTrip from '../../../Assets/Images/my-trip.svg';
+import langIcon from '../../../Assets/Images/lang-icon.svg';
 import searchImg from '../../../Assets/Images/search.svg';
 
 import img1 from '../../../Assets/Images/Viloyatlar/toshkent.jpg';
@@ -99,8 +99,8 @@ function Navbar() {
 		}
 	};
 	const closeSubMenu = () => {
-		setCloseSub(!closeSub)
-	}
+		setCloseSub(!closeSub);
+	};
 
 	window.addEventListener('scroll', navBarBack);
 
@@ -129,13 +129,18 @@ function Navbar() {
 							<li className="nav-item">
 								<Link to="/country" className="nav-links">
 									Shaharlar
-									<span className="nav-item__line"></span>
 								</Link>
-								<div className={closeSub ? 'submenu__box submenu--active': 'submenu__box'}>
+								<div
+									className={
+										closeSub
+											? 'submenu__box submenu--active'
+											: 'submenu__box'
+									}
+								>
 									<ul className="submenu__list">
 										{counrty.map((e, i) => (
 											<li
-											onClick={closeSubMenu}
+												onClick={closeSubMenu}
 												key={i}
 												className="submenu__item"
 											>
@@ -178,17 +183,21 @@ function Navbar() {
 								</Link>
 							</li>
 						</ul>
-						{/* <div className="my-trip">
-							<Link to="/bookmarks">
+						<div className="selection__lang">							
 								<img
-									className="my-trip__img"
-									src={myTrip}
-									alt="Bookmarks"
-									width={25}
-									height={25}
+									className="lang__img"
+									src={langIcon}
+									alt="Language icon"
+									width={26}
+									height={26}
 								/>
-							</Link>
-						</div> */}
+							<select className="lang__select">
+								<option value="uz">UZ</option>
+								<option value="ru">RU</option>
+								<option value="en">EN</option>
+							</select>
+							
+						</div>
 						<div className="search">
 							<Link to="/search">
 								<img

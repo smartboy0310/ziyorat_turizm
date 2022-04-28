@@ -85,16 +85,25 @@
   bottom: 0;
   z-index: 999;
   padding: 10px 0;
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(7, 54, 44, 0.99);
 }
 
-.my-trip {
-  margin-right: 20px;
+.selection__lang {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
   padding:  0;
   cursor: pointer;
 }
-.my-trip__img {
-    object-fit: contain;
+.lang__img {
+    object-fit: cover;
+    margin-right: 2px;
+}
+.lang__select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
 }
 .search {
   cursor: pointer;
@@ -120,6 +129,7 @@
   display: flex;
   align-items: center;  
   text-decoration: none;
+  line-height: 1em;
   color: #fff;
 
 }

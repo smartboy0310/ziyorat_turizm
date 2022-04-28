@@ -19,6 +19,7 @@ video {
    align-items: center; 
    padding: 0; 
    object-fit: cover;
+   z-index: -1;
 }
 
 .hero__heading {
@@ -30,7 +31,7 @@ video {
 
 .hero__paragraph {
    position: fixed;
-   top: 300px;
+   top: 270px;
    color: #fff;
    font-size: 32px;
 }
